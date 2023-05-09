@@ -24,7 +24,7 @@ int main(int argc, char *argv[])
 	
 	/* 入力チェック */
 	if (argc != 2) {
-		fprintf(stderr, "Usage: ./k05c hostname !\n");
+		fprintf(stderr, "Usage: ./k05c Hostname !\n");
 		exit(1);
 	}
 	

@@ -12,7 +12,7 @@
  
 #define PORT 50001
  
-char buf[]="Sample message.\n";
+char buf[]="Sample message. xxxxxz\n";
  
 int main(int argc, char *argv[])
 {

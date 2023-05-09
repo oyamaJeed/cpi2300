@@ -1,19 +1,19 @@
 TARGET := k05c
 SRC := $(TARGET).c
-OBJ := ../$(TARGET).o
+OBJ := $(TARGET).o
 
 CFLAGS := -g -Wall
 LFLAGS := -lm
 CC := gcc $(CFLAG) $(LFLAGS)
 
-all : $(TARGET)
+all: $(TARGET)
 
-$(TARGET): $(OBJ) 
-	$(CC) -o ../$@ $^ $(LFLAGS)
+$(TARGET): $(OBJ)
+	$(CC) -o ../$@ ../$^ $(LFLAGS)
 
-$(TARGET).o: $(SRC) 
-	$(CC) -o ../$(TARGET).o -c $^
-	
+$(OBJ): $(SRC)
+	$(CC) -o ../$(OBJ) -c $^
+
 clean:
 	rm -f ../$(TARGET) ../$(OBJ)
 
